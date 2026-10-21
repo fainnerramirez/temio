@@ -41,3 +41,68 @@ example
 # generated native folders
 /ios
 /android
+
+
+# Dependencias
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Builds nativos generados (se regeneran con `npx expo prebuild`)
+/android
+/ios
+
+# Builds locales y de EAS
+*.apk
+*.aab
+*.ipa
+*.app
+*.dSYM.zip
+*.orig.*
+
+# Claves y certificados (NUNCA subir)
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Metro
+.metro-health-check*
+
+# Logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+
+# Pruebas y cobertura
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# Drizzle (archivos locales; las migraciones SÍ se suben)
+drizzle/*.local.*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
